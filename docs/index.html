@@ -2,19 +2,73 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="https://unpkg.com/htmx.org@1.9.8"></script>
   </head>
   <body>
     <h1>Fernando D Quintero</h1>
     <table>
-        <tr>
-            <td>ferndq@pm.me</td>
-            <td>954-483-7407</td>
-            <td>github.com/thefurnace</td>
-        </tr>
+      <tr>
+        <td>ferndq@pm.me</td>
+        <td>954-483-7407</td>
+        <td>github.com/thefurnace</td>
+      </tr>
     </table>
-    <div hx-get="/content/objective" hx-trigger="load"></div>
-    <div hx-get="/content/skills" hx-trigger="load"></div>
-    <div hx-get="/content/educaiton" hx-trigger="load"></div>
+    <div>
+      <h2>objective</h2>
+      <p>
+        To work on and solve novel problems. I'm looking for opportunities in
+        Cloud development where I can sharpen my skills, work with other
+        talented engineers, and broaden my experience. I value an inclusive
+        environment where team members are empowered to contribute to the design
+        process and to express their creative and analytical skills.
+      </p>
+    </div>
+    <div>
+      <h2>skills & abilities</h2>
+      <ul>
+        <li>Strong analytical skills</li>
+        <li>
+          Able to think critically and find solutions under stress such as prod
+          on fire calls.
+        </li>
+        <li>OAuth2/OpenID with IdentityServe</li>
+        <li>C# / ASP .NET Core</li>
+        <li>Azure development and deployment</li>
+        <li>
+          Angular/React/Node development (as well as vanilla JS and CSS
+          wizardry)
+        </li>
+        <li>Python scripting used in day-to-day work automation</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <div>
+        <h3>University of Florida</h3>
+        <h4>Bachelor of Computer Science</h4>
+      </div>
+    </div>
+    <div>
+      <h2>Experience</h2>
+      <h3>Jun 19 - current | Software Engineer 2 | Citrix</h3>
+      <h4>Citrix Cloud Platform, Identity & Access Management Team</h4>
+    </div>
+    <div>
+      <h2>Projects</h2>
+      <div>
+        <h3>Synthetic monitoring to enable automatic outage mitigation</h3>
+        <h4>Citrix 2021</h4>
+        <p>
+          As part of an effort to replace our manual outage mitigation process
+          with an automated system I created Synthetic Monitoring scripts. We
+          ran these scripts via New relic against our production and internal
+          environments to create live continuous E2E testing and alerting. This
+          alerting was consumed by a health monitoring service that could
+          respond to outages in specific synthetics by changing traffic manager
+          rules to route traffic away from dysfunctional instances. The
+          automatic outage resolution effort as a whole brought my team's owned
+          services from 99.9% to 99.985% uptime.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
